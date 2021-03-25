@@ -1,0 +1,176 @@
+* {
+    padding:0; margin:0;
+}
+a {
+    text-decoration: none;
+    color:inherit;
+}
+ul {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+    display: block;
+}
+body {
+    width:1200px;
+    margin:0 auto;
+    position:relative;
+}
+/* modal */
+.modal {
+    width:500px; height:500px;
+    position:absolute;
+    top:250px; left:350px;
+    background:lightpink;
+    z-index:10;
+}
+.modal .cancel {
+    width:30px; height:30px;
+    border:1px solid #eee;
+    text-align: center;
+    line-height: 30px;
+    margin-left:auto;
+}
+.modal .cancel a {
+    display: block;
+}
+.modal h2 {
+    text-align: center;
+}
+/* header */
+header {
+    width:1200px; height:100px;
+    border-bottom: 1px solid #eee;
+    position:relative;
+}
+header h1 {
+    width:200px; height:100px;
+    text-align: center;
+    line-height: 100px;
+    float:left;
+}
+header nav {
+    width:700px;
+    height:200px;
+    position:absolute;
+    top:30px;
+    right:0;
+    z-index: 100;
+}
+header nav .gnb {
+    width:100%;
+    height:50px;
+    border:1px solid #eee;
+}
+header nav .gnb > li {
+    width:25%;
+    height:50px;
+    line-height: 50px;
+    float:left;
+    text-align: center;
+}
+header nav .gnb > li a {
+    display:block;
+}
+header nav .gnb > li:hover {
+    background:#333;
+    color:#fff;
+}
+header nav .sub {
+    background:#ddd;
+    color:#000;
+}
+header nav .sub > li:hover {
+    background:#e8e8e8;
+}
+
+/* slide */
+.slide {
+    width:1200px; height:300px;
+    position:relative;
+}
+.slide li {
+    position:absolute;
+    top:0; left:0;
+}
+
+/* contents */
+.contents {
+    width:1200px; height:200px;
+    border: 1px solid #ddd;
+}
+.contents > .cover {
+    display: flex;
+}
+.contents .notice {
+    width:400px; height:200px;
+}
+.contents .notice h3,
+.contents .gallery h3,
+.contents .baro h3 {
+    width:150px; height:50px;
+    line-height: 50px;
+    margin-left:19px;
+}
+.contents .notice #notice {
+    margin-left:10px;
+    margin-right:10px;
+}
+.contents .notice #notice li {
+    border-bottom: 1px solid #ddd;
+    height:30px;
+    text-indent:10px;
+    line-height:30px;
+}
+.contents .notice #notice li:hover {
+    background:#e8e8e8;
+}
+.contents .notice #notice li a {
+    display:block;
+}
+.contents .gallery {
+    width:400px; height:200px;
+    border-right:1px solid #eee;
+    border-left:1px solid #eee;
+}
+.contents .gallery li {
+    width:120px; height:120px;
+    border:1px solid #ddd;
+    float:left;
+    margin-top:15px;
+    margin-right:8px;
+}
+.contents .gallery li:nth-child(1) {
+    margin-left:8px;
+}
+.contents .baro {
+    width:400px; height:200px;
+}
+
+/* footer */
+footer {
+    width:1200px; height:100px;
+    border:1px solid #eee;
+    border-top:none;
+    
+}
+footer .familysite {
+    border:1px solid #eee;
+    border-top:none;
+    width:200px; height:100px;
+    text-align: center;
+    line-height: 100px;
+    float:right;
+}
+footer .bottom {
+    width:1000px; height:50px;
+    text-align: center;
+    line-height: 50px;
+}
+footer .copy {
+    width:1000px; height:50px;
+    text-align: center;
+    line-height: 50px;
+    border-top:1px solid #eee;
+}
