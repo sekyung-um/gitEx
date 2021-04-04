@@ -1,0 +1,14 @@
+$(document).ready(function(){
+    var I =0;
+
+    setInterval(function(){
+        if (I < 2 ) {
+            I++;
+        } else {
+            I = 0;
+        }
+
+        $('img').eq(I).animate({ top: "-300px"}, 300);
+        $('img').eq(I).animate({ top: "0"}, 300);
+    },3000);
+});
