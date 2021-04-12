@@ -83,10 +83,35 @@ nav ul.gnb > li > ul.sub > li > a {
   width: 100%;
   height: 350px;
   background: #ccc;
+  position: relative;
 }
 .contents ul.slide li {
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .contents ul.slide li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-indent: -9999px;
+}
+.contents ul.slide li:nth-child(1) {
+  width: 800px;
+  height: 350px;
+  background: coral;
+}
+.contents ul.slide li:nth-child(2) {
+  width: 800px;
+  height: 350px;
+  background: purple;
+}
+.contents ul.slide li:nth-child(3) {
+  width: 800px;
+  height: 350px;
+  background: lightpink;
 }
 .con {
   width: 100%;
