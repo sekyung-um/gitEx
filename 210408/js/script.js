@@ -18,7 +18,12 @@ $(document).ready(function () {
       i = 0;
     }
     $(".contents ul.slide li").eq(i).siblings().fadeOut();
-    $(".contents ul.slide li").eq(i).siblings().fadeIn();
+    $(".contents ul.slide li").eq(i).fadeIn();
     console.log(i);
   }, 3000);
+
+  $(".con .con1 h2").click(function () {
+    $(this).addClass("on").siblings().removeClass("on");
+    $(this).next("ul").addClass("on");
+  });
 }); //ready end
