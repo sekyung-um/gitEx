@@ -8,18 +8,33 @@ $(document).ready(function () {
     }
   );
 
-  $(".contents ul.slide li").eq(0).siblings().hide();
+  $(".contents .con1 .notice li")
+    .eq(0)
+    .click(function () {
+      $(".modal").show();
+    });
 
-  var i = 0;
+  $("button").click(function () {
+    $(".modal").hide();
+  });
+
+  $(".contents ul.slide li").eq(0).siblings().css("left", "-800px");
+
+  var I = 0;
 
   setInterval(function () {
-    if (i < 2) {
-      i++;
+    if (I < 2) {
+      I++;
     } else {
-      i = 0;
+      I = 0;
     }
-    $(".contents ul.slide li").eq(i).siblings().fadeOut();
-    $(".contents ul.slide li").eq(i).fadeIn();
-    console.log(i);
+
+    // $(".contents ul.slide li").eq(I).siblings().fadeOut();
+    // $(".contents ul.slide li").eq(I).fadeIn();
+
+    $(".contents ul.slide li").eq(I).siblings().animate({ left: "-800px" });
+    $(".contents ul.slide li").eq(I).siblings().animate({ left: "0" });
+
+    console.log(I);
   }, 3000);
 });

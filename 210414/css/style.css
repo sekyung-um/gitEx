@@ -15,6 +15,29 @@ a {
   display: table;
   clear: both;
 }
+body {
+  position: relative;
+}
+.modal {
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  border: 1px solid #000;
+  position: absolute;
+  top: 200px;
+  left: 500px;
+  z-index: 9;
+  display: none;
+}
+.modal button {
+  position: absolute;
+  bottom: 30px;
+  left: 135px;
+}
+.modal p {
+  margin-top: 50px;
+  text-align: center;
+}
 header {
   width: 200px;
   height: 650px;
@@ -77,6 +100,7 @@ header nav .gnb > li > .sub > li > a:hover {
   background: #eee;
   text-indent: -9999px;
   position: relative;
+  overflow: hidden;
 }
 .contents ul.slide li {
   width: 100%;
