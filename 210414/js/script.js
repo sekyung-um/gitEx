@@ -33,7 +33,7 @@ $(document).ready(function () {
     // $(".contents ul.slide li").eq(I).fadeIn();
 
     $(".contents ul.slide li").eq(I).siblings().animate({ left: "-800px" });
-    $(".contents ul.slide li").eq(I).siblings().animate({ left: "0" });
+    $(".contents ul.slide li").eq(I).animate({ left: "0" });
 
     console.log(I);
   }, 3000);
