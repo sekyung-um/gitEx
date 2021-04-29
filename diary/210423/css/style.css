@@ -44,7 +44,25 @@ header nav .gnb li > a:hover {
   width: 1292px;
   height: 100%;
   float: left;
-  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.contents .date {
+  width: 80px;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.contents .empty1 {
+  height: 100px;
+}
+.contents .empty2 {
+  height: 50px;
+}
+.contents .bodycopy {
+  line-height: 1.8em;
 }
 article {
   width: 373px;
